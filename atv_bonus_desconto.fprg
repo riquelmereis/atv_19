@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 11:31:53 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA3OzIwMjYtMDQtMTQ7IjExOjE4OjAyICI7Mjg1Mw=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA3OzIwMjYtMDQtMTQ7IjExOjMxOjUzICI7MjsyOTYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Real" array="False" size=""/>
+            <declare name="vip, cupom, parcela" type="String" array="False" size=""/>
+            <output expression="&quot;Quer descobrir se voc&#234; tem direito &#224; um SUPER DESCONTO?&quot;" newline="True"/>
+            <output expression="&quot;Resposda algumas perguntas e te daremos a resposta!&quot;" newline="True"/>
+            <output expression="&quot;Informe o valor de sua compra? &quot;" newline="True"/>
+            <input variable="valor"/>
+            <output expression="&quot;Voc&#234; &#232; cliente VIP? (s/n) &quot;" newline="True"/>
+            <input variable="vip"/>
+            <output expression="&quot;Voc&#234; possui algum cupom? (s/n) &quot;" newline="True"/>
+            <input variable="cupom"/>
+            <output expression="&quot;Voc&#234; tem alguma parcela atrasada? (s/n) &quot;" newline="True"/>
+            <input variable="parcela"/>
+            <if expression="((vip = &quot;s&quot;) and (valor &gt; 500)) or ((cupom = &quot;s&quot;) and (parcela = &quot;n&quot;))">
+                <then>
+                    <output expression="&quot;Parab&#233;ns!! Voc&#234; tem direito ao SUPER DESCONTO!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ahhh, infelizmente, voc&#234; n&#227;o tem direito ao SUPER DESCONTO.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

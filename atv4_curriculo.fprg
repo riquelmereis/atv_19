@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-14 11:00:36 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA3OzIwMjYtMDQtMTQ7IjEwOjQ2OjE5ICI7Mjg2MQ=="/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA3OzIwMjYtMDQtMTQ7IjExOjAwOjM2ICI7MTsyOTU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Real" array="False" size=""/>
+            <declare name="py, js" type="String" array="False" size=""/>
+            <output expression="&quot;Informe a sua idade &quot;" newline="True"/>
+            <input variable="idade"/>
+            <output expression="&quot;Voc&#234; sabe programar em JavaScript? (s/n)&quot;" newline="True"/>
+            <input variable="js"/>
+            <output expression="&quot;Voc&#234; sabe programar em Python? (s/n) &quot;" newline="True"/>
+            <input variable="py"/>
+            <if expression="idade &gt;= 18 and (js = &quot;s&quot; or py = &quot;s&quot;)">
+                <then>
+                    <output expression="&quot;Seu curr&#237;culo foi aceito!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu curr&#237;culo foi reprovado!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
