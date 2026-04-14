@@ -4,9 +4,10 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="Dev_1o_Ano"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-04-14 11:17:36 "/>
+        <attribute name="saved" value="2026-04-14 01:54:21 "/>
         <attribute name="created" value="RGV2XzFvX0FubztETlMxMTgxMjYwNzkwOzIwMjYtMDQtMTQ7IjExOjAxOjM2ICI7Mjg1Mw=="/>
         <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwNzkwOzIwMjYtMDQtMTQ7IjExOjE3OjM2ICI7MTsyOTY4"/>
+        <attribute name="edited" value="RGV2XzFvX0FubztETlMxMTgxMjYwODA3OzIwMjYtMDQtMTQ7IjAxOjU0OjIxICI7MTsyOTYx"/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -19,7 +20,7 @@
             <input variable="fiador"/>
             <output expression="&quot;Voc&#234; tem nome devedor no Serasa? (s/n) &quot;" newline="True"/>
             <input variable="serasa"/>
-            <if expression="(serasa = &quot;s&quot;)">
+            <if expression="(serasa != &quot;n&quot;)">
                 <then>
                     <output expression="&quot;Empr&#233;stimo negado&quot;" newline="True"/>
                 </then>
