@@ -18,16 +18,18 @@ inicio
    leia (serasa)
 
 // Se Senao
-   se (serasa = "s") entao
+   se (serasa <> "n") entao
       escreva ("Seu Empréstimo Foi Negado")
+      
    senao
    se(salario > 2000) ou (fiador = "s") entao
       limpatela
       escreva ("Seu Empréstimo Foi Aprovado")
+      
    senao
    limpatela
       escreva ("Seu Empréstimo Foi Negado")
-      
+
 fimse
 fimse
 
